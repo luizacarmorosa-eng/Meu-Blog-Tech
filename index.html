@@ -3,82 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portal de Notícias</title>
-    <style>
-        /* Estilos básicos para o site ficar bonito */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #34495e;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .noticia {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-        .noticia h2 {
-            color: #2c3e50;
-        }
-        .noticia img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Portal de Notícias | Hora H</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Jornal Digital</h1>
-        <p>As principais notícias do dia em tempo real</p>
+        <div class="logo">HORA <span>H</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Mundo</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Entretenimento</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Tecnologia</a>
-        <a href="#">Esportes</a>
-        <a href="#">Entretenimento</a>
-    </nav>
+    <section class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="https://picsum.photos/1200/400?random=1" alt="Notícia 1">
+            <div class="carousel-caption">
+                <h2>Lançamento Tecnológico do Ano Revoluciona o Mercado</h2>
+                <p>Descubra como a nova inteligência artificial está mudando o cotidiano das pessoas.</p>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="https://picsum.photos/1200/400?random=2" alt="Notícia 2">
+            <div class="carousel-caption">
+                <h2>Grande Final do Campeonato Termina em Virada Histórica</h2>
+                <p>O time azarão superou todas as expectativas nos últimos minutos do segundo tempo.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="container">
-        
-        <article class="noticia">
-            <h2>Nova IA Revoluciona a Criação de Conteúdo</h2>
-            <p><em>Publicado hoje às 10:00</em></p>
-            <p>Uma nova inteligência artificial promete ajudar estudantes e profissionais a organizarem suas rotinas de forma automatizada e muito mais simples. Especialistas dizem que essa é a maior mudança tecnológica do ano.</p>
+    <main class="news-container">
+        <article class="news-card">
+            <img src="https://picsum.photos/400/250?random=3" alt="Notícia">
+            <div class="news-content">
+                <span class="category">Mundo</span>
+                <h3>Exploração espacial atinge nova marca histórica nesta semana</h3>
+                <p>Astronautas completam missão com sucesso e trazem dados inéditos sobre o planeta Marte.</p>
+                <a href="#" class="read-more">Leia mais →</a>
+            </div>
         </article>
 
-        <article class="noticia">
-            <h2>Campeonato de E-sports Bate Recorde de Público
+        <article class="news-card">
+            <img src="https://picsum.photos/400/250?random=4" alt="Notícia">
+            <div class="news-content">
+                <span class="category">Entretenimento</span>
+                <h3>Festival de música quebra recorde de público no fim de semana</h3>
+                <p>Mais de 200 mil pessoas compareceram para assistir aos maiores artistas da atualidade.</p>
+                <a href="#" class="read-more">Leia mais →</a>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <img src="https://picsum.photos/400/250?random=5" alt="Notícia">
+            <div class="news-content">
+                <span class="category">Economia</span>
+                <h3>Nova moeda digital começa a ser testada por grandes bancos</h3>
+                <p>Especialistas debatem os impactos que a mudança trará para o bolso do cidadão comum.</p>
+                <a href="#" class="read-more">Leia mais →</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal Hora H. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
